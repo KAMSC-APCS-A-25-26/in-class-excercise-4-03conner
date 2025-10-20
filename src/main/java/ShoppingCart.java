@@ -2,10 +2,15 @@ import java.util.Scanner;
 
 public class ShoppingCart {
     public static void main(String[] args) {
-        // TODO: Ask the user how many items they are purchasing
-        // TODO: Use a for loop to read each item's price (double)
-        // TODO: Accumulate the total cost
-        // TODO: Print the final summary line with item count and total
-        // TODO: Use Scanner for input
+        System.out.print("How many items are you purchasing?: ");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        double value =0;
+        for(int i = 0; i < num; i++){
+            System.out.print("Price of item " + (i + 1) + "? ");
+            double cheese = sc.nextDouble();
+            value = value + cheese;
+        }
+        System.out.println("Your cart has " + num + " items with a total cost of $" + value);
     }
 }
