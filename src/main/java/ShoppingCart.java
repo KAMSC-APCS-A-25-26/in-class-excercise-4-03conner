@@ -11,6 +11,6 @@ public class ShoppingCart {
             double cheese = sc.nextDouble();
             value = value + cheese;
         }
-        System.out.println("Your cart has " + num + " items with a total cost of $" + value);
+        System.out.printf("Your cart has %d items with a total cost of $%.2f%n", num , value);
     }
 }
